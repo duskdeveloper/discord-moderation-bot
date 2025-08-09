@@ -1,0 +1,46 @@
+{
+    "prefix": "!",
+    "default_settings": {
+        "automod_enabled": true,
+        "spam_detection": true,
+        "profanity_filter": true,
+        "max_warnings": 3,
+        "warning_actions": {
+            "1": "warn",
+            "2": "timeout",
+            "3": "ban"
+        },
+        "timeout_duration": 300,
+        "log_channel": null,
+        "welcome_enabled": false,
+        "welcome_channel": null,
+        "welcome_message": "Welcome to {guild}, {user}!"
+    },
+    "blacklist_words": [
+        "example_bad_word",
+        "another_example"
+    ],
+    "spam_thresholds": {
+        "messages_per_minute": 10,
+        "duplicate_messages": 3,
+        "mention_limit": 5,
+        "emoji_limit": 10
+    },
+    "moderation_roles": [
+        "Moderator",
+        "Admin",
+        "Staff",
+        "Helper"
+    ],
+    "immune_roles": [
+        "Admin",
+        "Owner",
+        "Bot",
+        "Staff"
+    ],
+    "logging": {
+        "level": "INFO",
+        "format": "[%(asctime)s] [%(levelname)s] %(name)s: %(message)s",
+        "file": "bot.log"
+    }
+}
